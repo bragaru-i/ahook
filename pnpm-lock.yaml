@@ -13,21 +13,21 @@ importers:
         version: 8.57.0
       prettier:
         specifier: ^3.2.5
-        version: 3.2.5
+        version: 3.4.2
       turbo:
         specifier: ^2.3.3
         version: 2.3.3
 
   apps/docs:
     dependencies:
-      '@repo/ui':
+      '@ahook/ui':
         specifier: workspace:*
         version: link:../../packages/ui
     devDependencies:
-      '@repo/eslint-config':
+      '@ahook/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@repo/typescript-config':
+      '@ahook/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       eslint:
@@ -42,14 +42,14 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/ui':
+      '@ahook/ui':
         specifier: workspace:*
         version: link:../../packages/ui
     devDependencies:
-      '@repo/eslint-config':
+      '@ahook/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@repo/typescript-config':
+      '@ahook/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       eslint:
@@ -78,10 +78,10 @@ importers:
 
   packages/ui:
     devDependencies:
-      '@repo/eslint-config':
+      '@ahook/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
-      '@repo/typescript-config':
+      '@ahook/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       eslint:
@@ -741,8 +741,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1530,7 +1530,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.2.5: {}
+  prettier@3.4.2: {}
 
   punycode@2.3.1: {}
 
